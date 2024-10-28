@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Slab", serif;
+    line-height: 1.6;
+    background-color: black;
+    color: #f4f4f4;
+}
+
+.logo-title {
+    background-color: #EF45D5;
+    font-family: 'Yellowtail', cursive;
+    font-size: 150px;
+    margin-bottom: 5px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icono {
+    width: 40px;
+    height: 40px;
+}
+
+.navdrive ul {
+    list-style: none;
+    display: flex;
+}
+
+.navdrive ul li {
+    margin: 0 15px;
+}
+
+.navdrive ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navdrive ul li a:hover {
+    color: #EF45D5;
+}
+
+.menu > .navdrive {
+    border-bottom: 2px solid #EF45D5;
+}
+
+.seccion-drive {
+    padding: 50px 0;
+    background-color: black;
+    text-align: center;
+}
+
+.seccion-drive img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.drive-content {
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+}
+
+.drive-content p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f4f4f4;
+}
+
+.drive-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.txt-p {
+    font-family: "Roboto Slab", serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    font-family: 'Yellowtail', cursive;
+    margin-bottom: 40px;
+}
+
+.contenido img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.txt-3, .txt-2, .txt-4 {
+    font-family: "Roboto Slab", serif;
+}
+
+.txt-3, .txt-2, .txt-4 {
+    font-family: "Roboto Slab", serif;
+}
+
+.contenido h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ficha-tecnica ul {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f4f4f4;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.ficha-tecnica ul li:nth-child(odd) {
+    background-color: #333;
+}
+
+.ficha-tecnica ul li:nth-child(even) {
+    background-color: #444;
+}
+
+.footer a:focus {
+    outline: 2px solid #EF45D5;
+}
+
+.footer a:hover {
+    background-color: #444;
+}
+
+.footer {
+    background-color: #EF45D5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: black;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.ficha-tecnica {
+    background-color: black;
+}
+
+.fichaGosling {
+    background-color: #81006d;
+}
+
+.fichaCristina {
+    background-color: #400237;
+}
+
+.fichaActor {
+    font-size: 0.8em;
+    background-color: #20071e;
+}
+
+p::first-letter {
+    font-size: 2em;
+    color: #EF45D5;
+}
+
+::selection {
+    background-color: #EF45D5;
+    color: white;
+}
