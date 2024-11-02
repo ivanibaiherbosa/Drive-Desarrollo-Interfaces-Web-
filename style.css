@@ -232,3 +232,19 @@ p::first-letter {
     background-color: #EF45D5;
     color: white;
 }
+
+.imagenesFormato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagen-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.imagen-preview {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
