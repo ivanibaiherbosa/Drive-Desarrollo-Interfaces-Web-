@@ -223,10 +223,10 @@ header {
     background-color: #20071e;
 }
 
-p::first-letter {
+/*p::first-letter {
     font-size: 2em;
     color: #EF45D5;
-}
+}*/
 
 ::selection {
     background-color: #EF45D5;
@@ -247,4 +247,4 @@ p::first-letter {
     height: auto;
     display: block;
     margin: 0 auto;
-}
+} 
