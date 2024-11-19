@@ -7,70 +7,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaRZAY+fw5T6MgB78f1Wl71wzE4eMYVoG7FRlhsuWoH52ynBlOBOsFuBVEx" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <div class="menu container">
+            <!-- Elemento 1: `img-fluid` hace que la imagen sea responsiva y se adapte a diferentes tamaños de pantalla -->
             <a href="index.html">
-                <img src="https://uruloki.org/felipeblog/images2012-1/20120102-driveposter1.jpg" class="logo" alt="Logo Drive">
+                <img src="https://uruloki.org/felipeblog/images2012-1/20120102-driveposter1.jpg" class="logo img-fluid" alt="Logo Drive">
             </a>
             <nav class="navdrive">
-                <ul>
-                    <li><a href="impacto.html">Impacto de Drive</a></li>
-                    <li><a href="sinopsis.html">Sinopsis</a></li>
-                    <li><a href="ryan.html">Ryan Gosling</a></li>
-                    <li><a href="significado.html">Significado</a></li>
-                    <li><a href="ficha.html">Ficha técnica</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="UD2_tarea01.html">Reparto</a></li>
-                    <li><a href="formatoImagen.html">Imágenes</a></li>
-                    <li><a href="videos.html">Vídeos</a></li>
-
-
-                </ul>
+                <div class="hover-lift">
+                    <!-- Elemento 2: `navbar-nav`, `d-flex`, `flex-row`, y `gap-3` para estructurar la lista de navegación con espacios entre elementos -->
+                    <ul class="navbar-nav d-flex flex-row gap-3">
+                        <li><a href="impacto.html" class="nav-link text-white">Impacto de Drive</a></li>
+                        <li><a href="sinopsis.html" class="nav-link text-white">Sinopsis</a></li>
+                        <li><a href="ryan.html" class="nav-link text-white">Ryan Gosling</a></li>
+                        <li><a href="significado.html" class="nav-link text-white">Significado</a></li>
+                        <li><a href="ficha.html" class="nav-link text-white">Ficha técnica</a></li>
+                        <li><a href="contacto.html" class="nav-link text-white">Contacto</a></li>
+                        <li><a href="reparto.html" class="nav-link text-white">Reparto</a></li>
+                        <li><a href="formatoImagen.html" class="nav-link text-white">Imágenes</a></li>
+                        <li><a href="videos.html" class="nav-link text-white">Vídeos</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
-        <div class="header-content container">
+        <div class="header-content container text-center">
             <h1 class="logo-title">Ficha técnica</h1>
-            <p>"La estrella en 2011"</p>
+            <div class="fade-in">
+                <p>"La estrella en 2011"</p>
+            </div>
         </div>
     </header>
 
-    <section class="ficha-tecnica">
-            <h2>Ficha técnica</h2>
-            <ul>
-                <li><strong>Título:</strong> Drive</li>
-                <li><strong>Año:</strong> 2011</li>
-                <li><strong>Director:</strong> Nicolas Winding Refn</li>
-                <li><strong>Guionista:</strong> Hossein Amini (basado en la novela de James Sallis)</li>
-                <li><strong>Productores:</strong> Marc Platt, Adam Siegel, Gigi Pritzker, Michel Litvak, John Palermo</li>
-                <li><strong>Música:</strong> Cliff Martinez</li>
-                <li><strong>Fotografía:</strong> Newton Thomas Sigel</li>
-                <li><strong>Montaje:</strong> Matthew Newman</li>
-                <li><strong>Diseño de producción:</strong> Beth Mickle</li>
-                <li><strong>Vestuario:</strong> Erin Benach</li>
-                <li><strong>Género:</strong> Acción, Thriller, Neo-noir</li>
-                <li><strong>Duración:</strong> 100 minutos</li>
-                <li><strong>País:</strong> Estados Unidos</li>
-                <li><strong>Idioma:</strong> Inglés</li>
-                <li><strong>Reparto:</strong></li>
-                <ul>
-                    <li>Ryan Gosling como Driver (El Conductor)</li>
-                    <li>Carey Mulligan como Irene</li>
-                    <li>Bryan Cranston como Shannon</li>
-                    <li>Albert Brooks como Bernie Rose</li>
-                    <li>Oscar Isaac como Standard Gabriel</li>
-                    <li>Christina Hendricks como Blanche</li>
-                    <li>Ron Perlman como Nino</li>
-                </ul>
+    <section class="ficha-tecnica container">
+        <h2 class="text-center mt-4">Ficha técnica</h2>
+        <!-- Elemento 3: `list-group` y `list-group-item` estilizan la lista de información técnica de la película -->
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-dark text-light"><strong>Título:</strong> Drive</li>
+            <li class="list-group-item bg-dark text-light"><strong>Año:</strong> 2011</li>
+            <li class="list-group-item bg-dark text-light"><strong>Director:</strong> Nicolas Winding Refn</li>
+            <li class="list-group-item bg-dark text-light"><strong>Guionista:</strong> Hossein Amini (basado en la novela de James Sallis)</li>
+            <li class="list-group-item bg-dark text-light"><strong>Productores:</strong> Marc Platt, Adam Siegel, Gigi Pritzker, Michel Litvak, John Palermo</li>
+            <li class="list-group-item bg-dark text-light"><strong>Música:</strong> Cliff Martinez</li>
+            <li class="list-group-item bg-dark text-light"><strong>Fotografía:</strong> Newton Thomas Sigel</li>
+            <li class="list-group-item bg-dark text-light"><strong>Montaje:</strong> Matthew Newman</li>
+            <li class="list-group-item bg-dark text-light"><strong>Diseño de producción:</strong> Beth Mickle</li>
+            <li class="list-group-item bg-dark text-light"><strong>Vestuario:</strong> Erin Benach</li>
+            <li class="list-group-item bg-dark text-light"><strong>Género:</strong> Acción, Thriller, Neo-noir</li>
+            <li class="list-group-item bg-dark text-light"><strong>Duración:</strong> 100 minutos</li>
+            <li class="list-group-item bg-dark text-light"><strong>País:</strong> Estados Unidos</li>
+            <li class="list-group-item bg-dark text-light"><strong>Idioma:</strong> Inglés</li>
+            <li class="list-group-item bg-dark text-light"><strong>Reparto:</strong></li>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-light">Ryan Gosling como Driver (El Conductor)</li>
+                <li class="list-group-item bg-dark text-light">Carey Mulligan como Irene</li>
+                <li class="list-group-item bg-dark text-light">Bryan Cranston como Shannon</li>
+                <li class="list-group-item bg-dark text-light">Albert Brooks como Bernie Rose</li>
+                <li class="list-group-item bg-dark text-light">Oscar Isaac como Standard Gabriel</li>
+                <li class="list-group-item bg-dark text-light">Christina Hendricks como Blanche</li>
+                <li class="list-group-item bg-dark text-light">Ron Perlman como Nino</li>
             </ul>
-        
+        </ul>
+
+        <!-- Elemento 4: `table`, `table-dark`, y `table-bordered` para crear una tabla de datos con estilo Bootstrap -->
+        <h3 class="text-center mt-5">Datos de producción</h3>
+        <table class="table table-dark table-bordered mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">Aspecto</th>
+                    <th scope="col">Detalles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Presupuesto</td>
+                    <td>15 millones de dólares</td>
+                </tr>
+                <tr>
+                    <td>Recaudación</td>
+                    <td>76.1 millones de dólares</td>
+                </tr>
+                <tr>
+                    <td>Premios</td>
+                    <td>Ganador de Mejor Dirección en el Festival de Cannes</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Elemento 5: Sección de curiosidades usando clases de Bootstrap para estilos de texto y espaciado -->
+        <h3 class="text-center mt-5">Curiosidades</h3>
+        <div class="bg-dark text-light p-3 mb-2">
+            <h4>Ryan Gosling y el papel de "Driver"</h4>
+            <p>Ryan Gosling tuvo que aprender a hacer maniobras de conducción avanzadas para interpretar a "Driver". Su dedicación contribuyó a las escenas de acción realistas.</p>
+        </div>
+        <div class="bg-dark text-light p-3 mb-2">
+            <h4>El simbolismo de la chaqueta</h4>
+            <p>La icónica chaqueta con el escorpión de "Driver" representa su naturaleza dual y su relación con la violencia. Es un símbolo importante en la estética de la película.</p>
+        </div>
+        <div class="bg-dark text-light p-3 mb-2">
+            <h4>Influencia en el estilo neo-noir</h4>
+            <p>"Drive" es conocida por su influencia en el cine neo-noir contemporáneo, especialmente en el uso de luces de neón, estética minimalista y bandas sonoras retro.</p>
+        </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer-content container">
-            <a href="index.html">Volver al inicio</a>
+    <footer class="footer bg-dark text-white py-4">
+        <div class="footer-content container text-center">
+            <!-- `btn` y `btn-secondary` crean un botón estilizado con Bootstrap -->
+            <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
+        </div>
+        <div class="fade-in">
+            <p>&copy; 2024 Drive proyecto Iván Ibai Herbosa. Todos los derechos reservados.<br> Este sitio web y su contenido están protegidos 
+                por derechos de autor y otras leyes aplicables.<br>
+                Queda prohibida la reproducción total o parcial sin autorización expresa.
+            </p>
         </div>
     </footer>
 </body>

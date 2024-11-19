@@ -44,11 +44,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .menu-icono {
     width: 40px;
     height: 40px;
+    padding-top: 20px;
 }
 
 .navdrive ul {
@@ -57,7 +59,7 @@ header {
 }
 
 .navdrive ul li {
-    margin: 0 15px;
+    margin: 0 12px;
 }
 
 .navdrive ul li a {
@@ -87,20 +89,25 @@ header {
 }
 
 .drive-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     font-family: 'Yellowtail', cursive;
     text-align: center;
 }
 
 .drive-content p {
-    font-family: 'Roboto Slab', serif;
     font-size: 16px;
     line-height: 1.6;
     color: #f4f4f4;
+    font-family: 'Roboto Slab', serif;
 }
 
 .drive-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 28px; 
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
 }
 
 .txt-p {
@@ -110,13 +117,14 @@ header {
 }
 
 .contenido {
-    font-family: 'Yellowtail', cursive;
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contenido img {
     width: 100%;
-    max-width: 600px;
+    max-width: 300px; 
     margin-bottom: 20px;
 }
 
@@ -223,6 +231,8 @@ header {
     background-color: #20071e;
 }
 
+/*PRIMERA LETRA DE COLOR DIFERENTE*/
+
 /*p::first-letter {
     font-size: 2em;
     color: #EF45D5;
@@ -241,10 +251,126 @@ header {
 .imagen-item {
     text-align: center;
     margin-bottom: 20px;
+    width: 80%;
 }
 .imagen-preview {
-    width: 150px;
+    width: 80px;
+    max-width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
 } 
+
+/*TRANSICIÓN PARA EL MENÚ DE ARRIBA SE PONGA ROSA CADA ELEMENTO AL PASAR EL RATÓN*/
+.navdrive ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: transparent;
+    transition: background-color 0.4s ease, color 0.2s ease; /* Dos transiciones */
+}
+
+.navdrive ul li a:hover {
+    background-color: #EF45D5;
+    color: black; /* Cambia el color del texto y el fondo */
+}
+/* EXPANDIR LOS BLOQUES DEL drive-content-container*/
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+}
+
+.contenido:hover {
+    transform: scale(1.05); /* Expande el bloque ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+/* SOLO GRID Y FLEX PARA LOS 4 ELEMENTOS DEL INDEX.HTML*/
+
+.drive-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.drive-grid .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FADE IN ANIMACIÓN */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* SUAVIZAR ANIMACIÓN */
+.hover-opacity {
+    transition: opacity 0.3s ease;
+}
+
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+/* TRANSICION HOVER-LIFT PARA EL MENÚ DE ARRIBA SUBA LIGERAMENTE*/
+.hover-lift {
+    transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+/*FLEX Y GRID PARA videos.html*/
+/* Contenedor para organizar en filas */
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Estilo para cada elemento de video y audio */
+.video-audio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Ajusta el tamaño de los videos y audios */
+video, audio {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.imagenesFormato h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* ESTILO DEL A HREF DEL INDEX.HTML */
+.contenido a {
+    color: inherit; /* Hereda el color del elemento padre */
+    text-decoration: none;
+}
+
+.contenido a:hover {
+    color: inherit; /* Mantiene el color al pasar el ratón */
+    text-decoration: none;
+}

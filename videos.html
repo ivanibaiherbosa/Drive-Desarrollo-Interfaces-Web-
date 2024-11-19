@@ -16,18 +16,19 @@
                 <img src="https://uruloki.org/felipeblog/images2012-1/20120102-driveposter1.jpg" class="logo" alt="Logo Drive">
             </a>
             <nav class="navdrive">
-                <ul>
-                    <li><a href="impacto.html">Impacto de Drive</a></li>
-                    <li><a href="sinopsis.html">Sinopsis</a></li>
-                    <li><a href="ryan.html">Ryan Gosling</a></li>
-                    <li><a href="significado.html">Significado</a></li>
-                    <li><a href="ficha.html">Ficha técnica</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="UD2_tarea01.html">Reparto</a></li>
-                    <li><a href="formatoImagen.html">Imágenes</a></li>
-                    <li><a href="videos.html">Vídeos</a></li>
-
-                </ul>
+                <div class="hover-lift">
+                    <ul>
+                        <li><a href="impacto.html">Impacto de Drive</a></li>
+                        <li><a href="sinopsis.html">Sinopsis</a></li>
+                        <li><a href="ryan.html">Ryan Gosling</a></li>
+                        <li><a href="significado.html">Significado</a></li>
+                        <li><a href="ficha.html">Ficha técnica</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="reparto.html">Reparto</a></li>
+                        <li><a href="formatoImagen.html">Imágenes</a></li>
+                        <li><a href="videos.html">Vídeos</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
         <div class="header-content container">
@@ -37,39 +38,78 @@
 
     <section class="seccion-drive">
         <div class="imagenesFormato">
-            <h2>Formatos de vídeo</h2>
-
-            <div class="video-audio-item">
-                <video width="720" height="405" controls>
-                    <source src="videosAudios/I Could Look Out For You ｜ Drive (2011) ｜ [ 4K Edit ].mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de vídeo.
-                </video>
-                <h3>Vídeo MP4 en 4K</h3>
-                   <p><br>Este vídeo está en formato MP4 con resolución 4K, pesa 24,91 MB y el tiempo de carga <br>según herramientas de desarrollador es 308 ms. 
-                    Es un formato ampliamente compatible<br> y suele ofrecer buena calidad
-                    y compresión. Dependiendo del dispositivo<br> y de la conexión, puede tardar en cargar debido a la alta resolución.
-                </p>
+            <div class = "fade-in">
+            <h1>Formatos de vídeo</h1>
             </div>
-        <br>
-        <br>
-        <div class="video-audio-item">
-            <video width="720" height="405" controls>
-                <source src="videosAudios/I-Could-Look-Out-For-You-｜-Drive-_2011_-｜-_-4K-Edit-_.webm" type="video/WebM">
-                Tu navegador no soporta el elemento de vídeo.
-            </video>
-            <h3>Vídeo WebM en 4K</h3>
-            <p>
-              <br> Este vídeo está en formato WebM con resolución 4K, pesa 66,41 MB,<br> y el tiempo de carga, según las herramientas de desarrollador es 542 ms.<br> 
-                WebM es un formato optimizado para la web, ampliamente compatible<br> y que suele ofrecer buena calidad y compresión.<br> 
-                Sin embargo, debido a la alta resolución, el tiempo de carga puede aumentar<br> dependiendo del dispositivo y de la velocidad de la conexión a internet.
-            </p>
-            
+            <br><br>
+            <!-- Fila de videos -->
+            <div class="grid-row">
+                <div class="video-audio-item">
+                    <div class = "contenido">
+                    <video width="100%" controls>
+                        <source src="videosAudios/DriveVideoMP4.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de vídeo.
+                    </video>
+                    <h3>Vídeo MP4 en 4K</h3>
+                    <p>Este vídeo está en formato MP4 con resolución 720p, pesa 9,70 MB<br> y el tiempo de carga es 20 ms.
+                    Es un formato ampliamente compatible<br> y ofrece buena calidad y compresión.</p>
+                </div>
+                </div>
+
+                <div class="video-audio-item">
+                    <div class="contenido">
+                    <video width="100%" controls>
+                        <source src="videosAudios/DriveVideoWebM.webm" type="video/WebM">
+                        Tu navegador no soporta el elemento de vídeo.
+                    </video>
+                    <h3>Vídeo WebM en 4K</h3>
+                    <p>Este vídeo está en formato WebM con resolución 720p, pesa 5,90 MB<br> y el tiempo de carga es 21 ms.
+                    WebM es un formato optimizado<br> para la web, ampliamente compatible y de buena calidad.</p>
+                </div>
+                </div>
+            </div>
+            <div class = "fade-in">
+            <h1>Formatos de audio</h1>
+            </div>
+            <br><br>
+            <!-- Fila de audios -->
+            <div class="grid-row">
+                <div class="video-audio-item">
+                    <div class = "contenido">
+                    <audio controls>
+                        <source src="videosAudios/audioMP3.mp3" type="audio/mp3">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <h3>Audio MP3</h3>
+                    <p>Este archivo pesa 3,51 MB y tarda en cargar 23 ms.<br>
+                    El formato MP3 es conocido por su gran compatibilidad<br> y buena compresión, ideal para la web.</p>
+                </div>
+                </div>
+
+                <div class="video-audio-item">
+                    <div class = "contenido">
+                    <audio controls>
+                        <source src="videosAudios/audioOGG.ogg" type="audio/ogg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <h3>Audio OGG</h3>
+                    <p>Este archivo pesa 198 kB y tarda en cargar 6 ms.<br>
+                    El formato OGG ofrece buena calidad de sonido<br> pero tiene menor compatibilidad que el MP3.</p>
+                </div>
+                </div>
+            </div>
         </div>
-       
     </section>
 
     <footer class="footer">
         <div class="footer-content container">
             <a href="index.html">Volver al inicio</a>
         </div>
+        <div class="fade-in">
+            <p>&copy; 2024 Drive proyecto Iván Ibai Herbosa. Todos los derechos reservados.<br> Este sitio web y su contenido están protegidos 
+            por derechos de autor y otras leyes aplicables.<br>
+            Queda prohibida la reproducción total o parcial sin autorización expresa.</p>
+        </div>
     </footer>
+</body>
+</html>
